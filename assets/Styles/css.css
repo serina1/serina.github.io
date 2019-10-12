@@ -1,46 +1,74 @@
 html,
 body {
     margin: 0;
-    padding: 0;
+    padding: 0;    
+    font-family: 'Arial';
 }
+
+.inner-container{
+    background: url("https://www.toptal.com/designers/subtlepatterns/patterns/criss-cross.png");
+}
+
 
 h1 {
     margin: 0;   
 }
 
 h1:hover {
-    color: white;
+    color:#ddd;
 }
+
  header{
      display: flex;
     height: 50px;
     padding: 20px;
     justify-content : space-between;
     align-items: center;
-    background-color: #4aaaa5;
-    font-family:'Verdana';
+    background-color: #ffffff;
+    font-family:'Arial';
     
     } 
+    
+    .teal-block{
+        background-color: #4aaaa5;
+        height: 100px;
+        width: 200px;
+        padding-left: 5px;
+    }
 
     .tabs{
         display: flex;
         margin: 0px;
         padding: 0px;
         list-style: none;
+        align-content: space-between
         
     }
+    @media screen and (max-width: 600px) {
+         .tabs {   
+          flex-direction: column;
+        }
+      }
+  
+      @media screen and (max-width: 600px) {
+        .container{
+          float: none;
+          width: 100%;
+        }
+    }
+      
     .link{
         padding: 10px 20px;
-        color: #fff;
+        color: black;
         text-decoration: none;
         border-right-style:solid;
         border-width: 4px;
     }
     a:link {
-        color:white;
+        color:rgb(10, 10, 10);
       }
          a:hover {
-        color: darkolivegreen;
+        color: rgb(107, 107, 107);
       }
     
     .container {
@@ -50,6 +78,7 @@ h1:hover {
         flex-direction: column; 
         position: relative;
         justify-content: space-between;
+        
 
       }
       .label{
@@ -59,7 +88,8 @@ h1:hover {
       .column--main{
         flex:3; 
         background: #dddddd;
-      }
+        align-content: }
+      
       .column--sidebar{
         flex:1;
         background: #aaaaaa;
@@ -69,14 +99,13 @@ h1:hover {
       height: 100px;
       border-top: 8px solid #4aaaa5;
       background-color: #666666;
+      position: fixed;
+      align-items: flex-end;
+     
       /* opacity: 0.25; */
          
      }
-     
-     h2{
-        margin-top:20px;
-        padding: 20px;
-    }
+    
      .group{
         margin-bottom: 10px;
         right: 50px;
@@ -88,12 +117,5 @@ h1:hover {
         border-radius: 10px;
     }
 
-    .home{
-        display:flex;
-        justify-content:flex-end;
-        align-items: left;
-        border-radius: 10px;
-        
-    }
 
    
