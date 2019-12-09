@@ -1,0 +1,146 @@
+html,
+body {
+    margin: 0;
+    padding: 0;    
+    font-family: 'Arial';
+     background: url("https://www.toptal.com/designers/subtlepatterns/patterns/criss-cross.png");
+}
+
+
+.h1 {
+    margin: 0;   
+    border-top: 2px solid;
+    border-color: #dddddd;
+    margin-bottom: 30px;
+}
+
+
+
+.contentBody{
+  background: white;
+    border-width: 5px;
+    border-style: solid;
+    border-color: grey;
+    padding: 40px 30px 40px 30px;
+    width: 960px;
+    margin: auto;
+}
+
+.profile {
+  float: left;
+} 
+
+
+h1:hover {
+    color:#ddd;
+}
+
+ header{
+     display: flex;
+    height: 50px;
+    padding: 20px;
+    justify-content : space-between;
+    align-items: center;
+    background-color: #ffffff;
+    font-family:'Arial';
+    
+    } 
+    
+    .block{
+        background-color: purple;
+        height: 100px;
+        width: 200px;
+        padding-left: 5px;
+    }
+
+    .tabs{
+        display: flex;
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+        align-content: space-between
+        
+    }
+    @media screen and (max-width: 600px) {
+         .tabs {   
+          flex-direction: column;
+        }
+      }
+  
+      @media screen and (max-width: 600px) {
+        .contentBody{
+          float: none;
+          width: 100%;
+        }
+    }
+      
+    .link{
+        padding: 10px 20px;
+        color: black;
+        text-decoration: none;
+    }
+    a:link {
+        color:rgb(10, 10, 10);
+      }
+         a:hover {
+        color: rgb(107, 107, 107);
+      }
+    
+    .container {
+        display: flex;
+        
+        min-height: 100vh;
+        flex-direction: column; 
+        position: relative;
+        justify-content: space-between;
+        
+
+      }
+      .label{
+        font-family: Arial, Helvetica, sans-serif;
+        color: #777777;
+        display: block;
+        margin-bottom:5px;
+      }
+      /* .column--main{
+        flex:3; 
+        background: #dddddd;
+         }
+      
+      .column--sidebar{
+        flex:1;
+        background: #aaaaaa;
+      }  */
+          
+    
+    
+     .group{
+        margin-bottom: 15px;
+        
+    
+    }
+    .input{
+        border:1px solid #999;
+        padding:  10px 20px;
+        border-radius: 10px;
+        width:max-content;
+    }
+
+    button{
+      padding: 10px 25px;
+      border-style: solid 1px black;
+      border-radius: 5px;
+    }
+    
+    footer {
+      height: 100px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      border-top: 8px solid purple;
+      background-color: #666666;
+      text-align:center;
+}
+
+
+   
