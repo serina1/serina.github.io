@@ -1,18 +1,36 @@
 html,
 body {
     margin: 0;
-    padding: 0;    
+    padding: 0;  
+    
     font-family: 'Arial';
-}
-
-.inner-container{
-    background: url("https://www.toptal.com/designers/subtlepatterns/patterns/criss-cross.png");
+     background: url("https://www.toptal.com/designers/subtlepatterns/patterns/criss-cross.png");
 }
 
 
-h1 {
+.h1 {
     margin: 0;   
+    border-top: 2px solid;
+    border-color: #dddddd;
+    margin-bottom: 30px;
 }
+
+
+
+.contentBody{
+  background: white;
+    border-width: 5px;
+    border-style: solid;
+    border-color: grey;
+    padding: 40px 30px 40px 30px;
+    width: 960px;
+    margin: auto;
+}
+
+.profile {
+  float: left;
+} 
+
 
 h1:hover {
     color:#ddd;
@@ -29,8 +47,8 @@ h1:hover {
     
     } 
     
-    .teal-block{
-        background-color: #4aaaa5;
+    .block{
+        background-color: purple;
         height: 100px;
         width: 200px;
         padding-left: 5px;
@@ -51,7 +69,7 @@ h1:hover {
       }
   
       @media screen and (max-width: 600px) {
-        .container{
+        .contentBody{
           float: none;
           width: 100%;
         }
@@ -61,8 +79,6 @@ h1:hover {
         padding: 10px 20px;
         color: black;
         text-decoration: none;
-        border-right-style:solid;
-        border-width: 4px;
     }
     a:link {
         color:rgb(10, 10, 10);
@@ -82,40 +98,58 @@ h1:hover {
 
       }
       .label{
-          Display: block;
-          margin-bottom:10px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #777777;
+        display: block;
+        margin-bottom:5px;
       }
-      .column--main{
+      /* .column--main{
         flex:3; 
         background: #dddddd;
-        align-content: }
+         }
       
       .column--sidebar{
         flex:1;
         background: #aaaaaa;
-      }
+      }  */
           
-    footer{
-      height: 100px;
-      border-top: 8px solid #4aaaa5;
-      background-color: #666666;
-      position: fixed;
-      align-items: flex-end;
-     
-      /* opacity: 0.25; */
-         
-     }
+    
     
      .group{
-        margin-bottom: 10px;
-        right: 50px;
+        margin-bottom: 15px;
+        
     
     }
     .input{
         border:1px solid #999;
         padding:  10px 20px;
         border-radius: 10px;
+        width:max-content;
     }
+
+    button{
+      padding: 10px 25px;
+      border-style: solid 1px black;
+      border-radius: 5px;
+    }
+    
+    footer {
+      height: 100px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      border-top: 8px solid purple;
+      background-color: #666666;
+      text-align:center;
+}
+
+#portfolioContent{
+  display: flex
+  flex-wrap:wrap;
+}
+.row{
+  display: flex;
+}
 
 
    
